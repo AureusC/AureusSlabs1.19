@@ -12,7 +12,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:glow_berries"
+            "items": ["minecraft:glow_berries"]
           }
         ]
       }

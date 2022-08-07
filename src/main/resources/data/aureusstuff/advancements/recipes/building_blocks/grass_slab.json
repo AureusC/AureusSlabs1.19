@@ -12,7 +12,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:grass_block"
+            "items": ["minecraft:grass_block"]
           }
         ]
       }

@@ -12,7 +12,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:podzol"
+            "items": ["minecraft:podzol"]
           }
         ]
       }

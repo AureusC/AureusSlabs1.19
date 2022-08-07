@@ -27,7 +27,7 @@ public class GlowBerryGogglesItem extends GeoArmorItem implements IAnimatable {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmorMaterials.GLOW_BERRY_GOGGLES,
-                            new MobEffectInstance(MobEffects.NIGHT_VISION, 300, 1)).build();
+                            new MobEffectInstance(MobEffects.NIGHT_VISION, 300, 1, false, false)).build();
 
     public GlowBerryGogglesItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);

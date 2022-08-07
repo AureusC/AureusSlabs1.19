@@ -12,7 +12,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:rooted_dirt"
+            "items": ["minecraft:rooted_dirt"]
           }
         ]
       }

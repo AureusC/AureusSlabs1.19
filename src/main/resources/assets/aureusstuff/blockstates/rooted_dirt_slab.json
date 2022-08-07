@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "aureusstuff:block/dirt_slab"
+      "model": "aureusstuff:block/rooted_dirt_slab"
     },
     "type=double": {
       "model": "minecraft:block/rooted_dirt"
     },
     "type=top": {
-      "model": "aureusstuff:block/dirt_slab_top"
+      "model": "aureusstuff:block/rooted_dirt_slab_top"
     }
   }
 }

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "aureusstuff:coarse_dirt_slab",
+    "aureusstuff:dirt_slab",
+    "aureusstuff:grass_slab",
+    "aureusstuff:mycelium_slab",
+    "aureusstuff:podzol_slab",
+    "aureusstuff:rooted_dirt_slab"
+  ]
+}

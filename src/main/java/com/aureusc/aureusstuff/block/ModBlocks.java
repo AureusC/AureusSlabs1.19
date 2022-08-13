@@ -3,6 +3,7 @@ package com.aureusc.aureusstuff.block;
 import com.aureusc.aureusstuff.AureusStuff;
 import com.aureusc.aureusstuff.item.ModCreativeModeTab;
 import com.aureusc.aureusstuff.item.ModItems;
+import com.aureusc.aureusstuff.item.custom.DirtPathSlab;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -45,6 +46,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GRASS_SLAB = registerBlock("grass_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.GRASS, MaterialColor.GRASS)
+                    .strength(0.6f).sound(SoundType.GRASS)), ModCreativeModeTab.AUREUS_STUFF_TAB);
+
+    public static final RegistryObject<Block> DIRT_PATH_SLAB = registerBlock("dirt_path_slab",
+            () -> new DirtPathSlab(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.DIRT)
                     .strength(0.6f).sound(SoundType.GRASS)), ModCreativeModeTab.AUREUS_STUFF_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

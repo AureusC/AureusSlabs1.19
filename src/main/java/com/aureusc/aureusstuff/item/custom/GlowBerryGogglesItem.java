@@ -10,6 +10,8 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
+import org.lwjgl.opengl.GL11;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -33,9 +35,6 @@ public class GlowBerryGogglesItem extends GeoArmorItem implements IAnimatable {
         super(material, slot, settings);
     }
 
-    //@Override
-    //public void renderHelmetOverlay(ItemStack stack, Player player, int width, int height, float partialTick);
-
     @Override
     public void registerControllers(AnimationData data) {
         data.addAnimationController(new AnimationController<GlowBerryGogglesItem>(this, "controller",
@@ -54,7 +53,7 @@ public class GlowBerryGogglesItem extends GeoArmorItem implements IAnimatable {
 
     @Override
     public void onArmorTick(ItemStack stack, Level world, Player player) {
-        if(!world.isClientSide()) {
+        if (!world.isClientSide()) {
             evaluateArmorEffects(player);
         }
     }
@@ -64,7 +63,7 @@ public class GlowBerryGogglesItem extends GeoArmorItem implements IAnimatable {
             ArmorMaterial mapArmorMaterial = entry.getKey();
             MobEffectInstance mapStatusEffect = entry.getValue();
 
-            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+            if (hasCorrectArmorOn(mapArmorMaterial, player)) {
                 addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
             }
         }
@@ -74,7 +73,7 @@ public class GlowBerryGogglesItem extends GeoArmorItem implements IAnimatable {
                                             MobEffectInstance mapStatusEffect) {
         //boolean hasPlayerEffect = player.hasEffect(mapStatusEffect.getEffect());  && !hasPlayerEffect
 
-        if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+        if (hasCorrectArmorOn(mapArmorMaterial, player)) {
             player.addEffect(new MobEffectInstance(mapStatusEffect.getEffect(),
                     mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
 
@@ -82,9 +81,11 @@ public class GlowBerryGogglesItem extends GeoArmorItem implements IAnimatable {
     }
 
     private boolean hasCorrectArmorOn(ArmorMaterial material, Player player) {
-        ArmorItem helmet = ((ArmorItem)player.getInventory().getArmor(3).getItem());
+        ArmorItem helmet = ((ArmorItem) player.getInventory().getArmor(3).getItem());
 
         return helmet.getMaterial() == material;
 
     }
+
 }
+

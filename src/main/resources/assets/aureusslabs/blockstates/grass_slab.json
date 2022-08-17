@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aureusslabs:block/grass_slab"
+    },
+    "type=double": {
+      "model": "aureusslabs:block/grass_slab_block"
+    },
+    "type=top": {
+      "model": "aureusslabs:block/grass_slab_top"
+    }
+  }
+}

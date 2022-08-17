@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aureusslabs:block/podzol_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/podzol"
+    },
+    "type=top": {
+      "model": "aureusslabs:block/podzol_slab_top"
+    }
+  }
+}

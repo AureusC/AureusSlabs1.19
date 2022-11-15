@@ -1,0 +1,11 @@
+{
+  "block.aureusslabs.coarse_dirt_slab": "砂土台阶",
+  "block.aureusslabs.dirt_slab": "泥土台阶",
+  "block.aureusslabs.grass_slab": "草方块台阶",
+  "block.aureusslabs.podzol_slab": "灰化土台阶",
+  "block.aureusslabs.mycelium_slab": "菌丝台阶",
+  "block.aureusslabs.rooted_dirt_slab": "缠根泥土台阶",
+  "block.aureusslabs.dirt_path_slab": "土径台阶",
+
+  "itemGroup.aureusslabstab": "Aureus的台阶"
+}
